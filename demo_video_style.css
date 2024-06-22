@@ -1,0 +1,129 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav{
+	display: flex;
+	font-weight: bold;
+	justify-content: space-around;
+	align-items: center;
+	height: 17vh;
+    background-image: linear-gradient(to right, #fcfaf7, #ecd7a5);
+}
+
+.logo{
+	font-size: 2.3rem;
+	border-bottom: 5px solid #424242;
+    color: #424242;
+}
+
+.logo:hover{
+	cursor: default;
+}
+
+.menu_items{
+	display: flex;
+	font-weight: bold;
+	gap: 2rem;
+	list-style: none;
+	font-size: 1.5rem;
+}
+
+.m_item{
+	color: #4f4d4d;
+	text-decoration: none;
+}
+
+.m_item:hover{
+	color: #CA9E7B;
+	text-decoration: underline;
+	text-underline-offset: 0.9rem;
+	text-decoration-color: #b89871;
+}
+
+#highlight{
+	background-color: #d8b487;
+	padding: 1rem;
+	border-radius: 3rem;
+}
+
+#menu_bar{
+	display: none;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+.demo_video{
+
+    width: 60%;
+    height: calc(.5625 * 60vw);
+}
+
+/* Desktop view */
+#main_video{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    background-image: linear-gradient(to right, #e2dcd3, #dcc199);
+}
+
+#heading{
+    grid-column: 1/8;
+    display: grid;
+    align-items: center;
+}
+
+#video_part{
+    grid-column: 1/8;
+    grid-row: 2/6;
+    text-align: center;
+}
+
+#explaining{
+	display: block;
+	grid-column: 1/8;
+	grid-row: 6/7;
+}
+
+footer{
+    background: #c2b096;
+    grid-column: 1/8;
+    grid-row: 7/8;
+}
+
+/* Mobile view */
+@media (max-width: 992px){ 
+    #main_video{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows: minmax(100px,auto);
+        background-image: linear-gradient(to right, #e2dcd3, #dcc199);
+    }
+    
+    #heading{
+        grid-column: 1/4;
+    }
+    
+    #video_part{
+        grid-column: 1/4;
+        grid-row: 2/4;
+        text-align: center;
+    }
+	#explaining{
+		margin-top: 10px;
+		margin-left: 20px;
+		display: block;
+		grid-column: 1/4;
+		grid-row: 4/5;
+		color: limegreen;
+	}
+
+    footer{
+        background: #c2b096;
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+}

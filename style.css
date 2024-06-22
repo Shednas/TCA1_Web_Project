@@ -41,8 +41,8 @@ nav{
 .m_item:hover{
 	color: #CA9E7B;
 	text-decoration: underline;
-	text-underline-offset: 1rem;
-	text-decoration-color: #E9CBA7;
+	text-underline-offset: 0.9rem;
+	text-decoration-color: #b89871;
 }
 
 #highlight{
@@ -70,6 +70,8 @@ nav{
     }
 
     .contact_heading{
+        display: grid;
+        align-items: center;
         grid-column:1/5 ;
         text-align:start;
         font-size: 5rcap;
@@ -106,6 +108,7 @@ nav{
 }
 
 .contact_heading{
+    
     grid-column:1/5 ;
     text-align:start;
     font-size: 5rcap;
@@ -140,7 +143,6 @@ footer{
 
 /* Contact info grid */
 .contact_element{
-
 	height: 120px;
 	align-items: center;
 	justify-content: center;
@@ -151,8 +153,8 @@ footer{
 .logo_image{
 	font-size: 50px;
 	padding: 0.7rem;
-	height: 80px;
-	width: 80px;
+	height: 70px;
+	width: 70px;
 	border: 2px solid #3a3939;
 	border-radius: 50%;
 	transition: 0.3s linear;
@@ -170,7 +172,7 @@ footer{
 	opacity: 0;
 	letter-spacing: 1px;
 	transition: 0.3s linear;
-    color: black</a>;
+    color: black;
 }
 .contact_element:hover p{
 	max-height: 30px;

@@ -8,7 +8,7 @@
             type="image/png"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="website_style.css">
+		<link rel="stylesheet" type="text/css" href="demo_video_style.css">
 	</head>
 	<body>
 		<nav id="menu">
@@ -22,25 +22,19 @@
 					<li><a href="site_report.html" class="m_item">Report</a></li>
 				</ul>
 			</div>
-			<div id="menu_bar">
-				<img src="bar.png">
-			</div>
-			<div class="drop_menu open">
-					<li><a href="my_portfolio.html" class="m_item">Home</a></li>
-					<li><a href="my_projects.html" class="m_item">Projects</a></li>
-					<li><a href="contact.html" clas="m_item">Contact</a></li>
-					<li><a href="demo_video.html" class="m_item" id="highlight">Video Demo</a></li>
-					<li><a href="site_report.html" class="m_item">Report</a></li>			
-			</div>			
-		</nav>
-		<main>
-			<h2>Here is a video demo for the this website</h2>
-			<video controls width="700px">
-				<source src="" type="video/mp4">
-				<source src="" type="video/webm">
-					This browser doesn't support the video
-			</video>
-		</main>
-		
-	</body>
+        </nav>
+        <div id="main_video">
+            <h1 id="heading">Website Demo video</h1>
+            <div id="video_part">
+                <video controls class="demo_video">
+                    <source src="" type="video/mp4">
+                    <source src="" type="video/webm">
+					This browser doesn't support the video format.
+                </video>
+            </div>
+            <p id="explaining"> *This video will demonstrate the website.<br>It will also explain some of the concepts while designing this website.<br>And also the problem solving that had been done for its working.*</p>
+            <footer>Made by Sandesh Thapa</footer>
+        </div>
+        
+    </body>
 </html>
