@@ -3,39 +3,40 @@
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
+	align-items: center;
+	box-sizing: border-box;
+
 }
 
-p{
-	color: #a29b8f;
+body{
+	background-image: linear-gradient(to right, #FDFCFB, #edcaad);
 }
-
 /*Navigation Part */
 
-nav, .menu_items{
+nav{
 	display: flex;
 	font-weight: bold;
-}
-
-nav{
 	justify-content: space-around;
 	align-items: center;
 	height: 17vh;
 }
 
 .menu_items{
+	display: flex;
+	font-weight: bold;
 	gap: 2rem;
 	list-style: none;
 	font-size: 1.50rem;
 	
 }
 
-a{
+.m_item{
 	color: black;
 	text-decoration: none;
 	text-decoration-color: white;
 }
 
-a:hover{
+.m_item:hover{
 	color: #CA9E7B;
 	text-decoration: underline;
 	text-underline-offset: 1rem;
@@ -44,6 +45,7 @@ a:hover{
 
 .logo{
 	font-size: 2rem;
+	border-bottom: 5px solid #3a3939;
 }
 
 .logo:hover{
@@ -51,7 +53,7 @@ a:hover{
 }
 
 #highlight{
-	background-color: bisque;
+	background-color: #d8b487;
 	padding: 0.7rem 1.2rem;
 	border-radius: 3rem;
 }
@@ -62,6 +64,56 @@ a:hover{
 	font-size: 1.5rem;
 }
 
+/* Contact Css */
+.contact_info{
+	align-items: center;
+	justify-content: flex-start;
+}
+.seperating{
+	display: flex;
+	width: 50%;
+	margin-left: 10px;
+}
+.contact_element{
+	border-bottom: solid 2px black;
+	margin: 5px;
+	height: 120px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	padding: .25em .125em;
+}
+.logo_image{
+	font-size: 50px;
+	padding: 1rem;
+	height: 60px;
+	width: 60px;
+	background: pink;
+	border: 2px solid #3a3939;
+	border-radius: 50%;
+	transition: 0.3s linear;
+}
+
+.contact_element:hover .logo_image{
+	background: none;
+	transform: scale(1.2, 1.2);
+}
+
+.contact_element p{
+	margin-top: 10px;
+	font-weight: 600;
+	opacity: 0;
+	letter-spacing: 1px;
+	transition: 0.3s linear;
+}
+.contact_element:hover p{
+	max-height: 40px;
+	opacity: 1;
+}
+
+
 /* Dropdown Menu */
 .drop_menu{
 	display: none;
@@ -70,7 +122,7 @@ a:hover{
 	top: 90px;
 	width: 300px;
 	height: 0;
-	background: #e9e8e7;
+	background: #d9c1a8;
 	backdrop-filter: blur(15px);
 	border-radius: 10px;
 	overflow: hidden;
@@ -104,5 +156,15 @@ a:hover{
 	.drop_menu{
 		left: 2rem;
 		width: unset;
+	}
+}
+@media screen and (max-width: 800) {
+	.contact_info{
+		flex-direction: column;
+	}
+	.contact_element{
+		width: 100%;
+		max-width: 300px;
+		margin: 10px 0;
 	}
 }
