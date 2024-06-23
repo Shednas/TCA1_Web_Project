@@ -8,32 +8,30 @@
             type="image/png"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="demo_video_style.css">
+		<link rel="stylesheet" type="text/css" href="my_website_styles.css">
 	</head>
 	<body>
-		<nav id="menu">
-			<div class="logo">Sandesh Thapa</div>
-			<div>
-				<ul class="menu_items">
+		<div class="grid_container_main">
+            <nav id="navigation_menu">
+                <div id="hero_logo">Sandesh Thapa</div>
+				<ul id="menu_items">
 					<li><a href="my_portfolio.html" class="m_item">Home</a></li>
 					<li><a href="my_projects.html" class="m_item">Projects</a></li>
 					<li><a href="contact.html" class="m_item">Contact</a></li>
 					<li><a href="demo_video.html" class="m_item" id="highlight">Video Demo</a></li>
 					<li><a href="site_report.html" class="m_item">Report</a></li>
 				</ul>
-			</div>
-        </nav>
-        <div id="main_video">
-            <h1 id="heading">Website Demo video</h1>
-            <div id="video_part">
-                <video controls class="demo_video">
-                    <source src="" type="video/mp4">
-                    <source src="" type="video/webm">
-					This browser doesn't support the video format.
-                </video>
-            </div>
-            <p id="explaining"> *This video will demonstrate the website.<br>It will also explain some of the concepts while designing this website.<br>And also the problem solving that had been done for its working.*</p>
+            </nav>
+
+            <main id="main_video">
+                <h1 class="page_heading" id="video_heading">Website Demo video</h1>
+                <div id="video_part">
+                    <a href=""><img src="photo_contact.jpg" id="demo_video"><br>Click here</a>
+                </div>
+                <p id="video_explaining"> *This video will demonstrate the website.<br>It will also explain some of the concepts while designing this website.<br>And also the problem solving that had been done for its working.*</p>
+            </main>
             <footer>Made by Sandesh Thapa</footer>
+
         </div>
         
     </body>
