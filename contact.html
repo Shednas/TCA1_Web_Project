@@ -53,7 +53,17 @@
                 </section>
                 
                 <aside id="form_container">
-                        <img src="photo_contact.jpg" alt="">
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact_form">
+                            <div class="contact_form_title">
+                                <h2>Contact Me</h2>
+                                <hr>
+                            </div>
+                            <input type="hidden" name="access_key" value="bd96af7b-faf2-432d-8767-80eb06aef175">
+                            <input type="text" name="name" placeholder="Your Name" class="contact_inputs" required>
+                            <input type="email" name="email" placeholder="Your Email" class="contact_inputs" required>
+                            <textarea name="message" placeholder="Your message" class="contact_inputs" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
                 </aside>
             </main>
             <footer>
