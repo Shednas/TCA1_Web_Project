@@ -282,20 +282,20 @@ footer{
     text-align: center;
 }
 
-#p_section1{
+#project_1{
     grid-column: 2/3;
 }    
-#p_section2{
+#project_2{
     grid-column: 3/4;
 }
-#p_section3{
+#project_3{
     grid-column: 4/5;
 }
-#p_section4{
+#project_4{
     grid-column: 2/3;
     grid-row: 2/3;
 }
-#p_section5{
+#project_5{
     grid-column: 3/4;
     grid-row: 2/3;
 }
@@ -311,19 +311,52 @@ footer{
     transform: scale(1.05);
     transition: 0.2s ease-in-out;
 }
-.part1{
+.project_part1{
     grid-row: 1/4;
     cursor: pointer;
-    
 }
-.part1 a img:hover{
+
+.project_part1 a img:hover{
     box-shadow: 1px 1px 1em 3px #9f9e9e;
 }
-.part2{
+
+.project_part2{
     grid-row: 4/5;
     cursor: default;
 }
 
+#main_portfolio{
+    display: grid;
+}
+
+/* Portfolio page */
+#main_portfolio{
+
+}
+
+#portfolio_heading{
+
+}
+
+#about_me_heading{
+
+}
+
+#about_me_p{
+
+}
+
+#interest_heading{
+
+}
+
+.list_interest{
+
+}
+
+.portfolio_image{
+
+}
 
 /* Mobile view */
 @media (max-width: 750px){ 
