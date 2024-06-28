@@ -31,24 +31,39 @@ footer{
 
 /* Navigation Bar */
 #navigation_menu{
-    margin-left: 5%;
 	display: grid;
-    grid-template-columns: 20% 20% 65%;
+    grid-template-columns: 20% 30% 50%;
     height: 17vh;
     align-items: center;
 	font-weight: bold;
-    background-image: linear-gradient(to right, #fcfaf7, #ecd7a5);
+    background-image: linear-gradient(to right, #f9ebd8, #ecd7a5);
 }
 
 #hero_logo{
-	font-size: 2.3rem;
-	border-bottom: 5px solid #424242;
-    color: #424242;
     grid-column: 1/2;
-    align-items: start;
+}
+#hero_logo h1{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translate(5%,-50%);
+    font-family: Verdana, sans-serif;
+    color: #A87C7C;
+    font-size: 3rem;
+    text-decoration: underline;
 }
 
-#hero_logo:hover{
+#hero_logo h1::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #503C3C;
+    width: 0;
+    overflow: hidden;
+    transition: 0.7s;
+    text-decoration: underline;
+}
+#hero_logo h1:hover::before{
+    width: 100%;
 	cursor: default;
 }
 
@@ -65,6 +80,7 @@ footer{
 .m_item{
 	color: #4f4d4d;
 	text-decoration: none;
+    transition: 0.2s ease-in-out;
 }
 
 .m_item:hover{
@@ -72,6 +88,7 @@ footer{
 	text-decoration: underline;
 	text-underline-offset: 0.9rem;
 	text-decoration-color: #b89871;
+    transition: 0.1s ease-in-out;
 }
 
 #highlight{
@@ -79,9 +96,6 @@ footer{
 	padding: 1rem;
 	border-radius: 3rem;
 }
-
-/* Portfolio */
-
 
 
 /* Contact */
@@ -325,14 +339,12 @@ footer{
     cursor: default;
 }
 
+
+/* Portfolio page */
 #main_portfolio{
     display: grid;
 }
 
-/* Portfolio page */
-#main_portfolio{
-
-}
 
 #portfolio_heading{
 
@@ -356,6 +368,13 @@ footer{
 
 .portfolio_image{
 
+}
+
+#quote{
+        color: #fff;
+        text-shadow: 2px 2px 2px black;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: large;
 }
 
 /* Mobile view */

@@ -7,6 +7,39 @@
 	box-sizing: border-box;
 
 }
+#hero_logo{
+    grid-column: 1/2;
+}
+#hero_logo h1{
+    position: absolute;
+    transform: translate(-0%,-50%);
+    font-size: 3.5rem;
+}
+#hero_logo h1:nth-child(1){
+    align-items: start;
+    color: transparent;
+    -webkit-text-stroke: 2px #875837;
+}
+#hero_logo h1:nth-child(2){
+    color: #875837;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate
+{
+    0%,100%
+    {
+        clip-path: polygon(0 41%, 15% 41%, 31% 46%, 50% 56%, 64% 57%, 82% 55%, 100% 48%, 100% 100%, 0 100%);
+    }
+    50%
+    {
+        clip-path: polygon(0 53%, 16% 58%, 31% 60%, 49% 59%, 63% 48%, 81% 41%, 100% 41%, 100% 100%, 0 100%);
+    }
+}
+
+#hero_logo:hover{
+	cursor: default;
+}
 
 body{
 	background-image: linear-gradient(to right, #FDFCFB, #edcaad);
