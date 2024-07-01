@@ -13,16 +13,26 @@
 	</head>
     <body>
         <div class="grid_container_main">
-            <nav id="navigation_menu">
-                <div id="hero_logo"><p data-text="Sandesh Thapa">Sandesh Thapa</p></div>
-                <ul id="menu_items">
-                    <li><a href="my_portfolio.html" class="m_item">Home</a></li>
-                    <li><a href="my_projects.html" class="m_item">Projects</a></li>
-                    <li><a href="contact.html" class="m_item" id="highlight">Contact</a></li>
-                    <li><a href="demo_video.html" class="m_item">Video Demo</a></li>
-                    <li><a href="site_report.html" class="m_item">Report</a></li>
-                </ul>
-            </nav>
+            <nav>
+				<ul id="menu_side_bar">
+					<li onclick=hideSidebar()><a href="#"><img src="close_menu.png" alt=""></a></li>
+					<li><a href="my_portfolio.html">Home</a></li>
+					<li><a href="my_projects.html">Projects</a></li>
+					<li><a href="contact.html" class="highlight">Contact</a></li>
+					<li><a href="demo_video.html">Video Demo</a></li>
+					<li><a href="site_report.html">Report</a></li>
+				</ul>
+				<ul>
+					<li id="hero_logo"><p>Sandesh Thapa</p></li>
+					<li class="hide_menu_on_mobile"><a href="my_portfolio.html">Home</a></li>
+					<li class="hide_menu_on_mobile"><a href="my_projects.html">Projects</a></li>
+					<li class="hide_menu_on_mobile"><a href="contact.html" class="highlight">Contact</a></li>
+					<li class="hide_menu_on_mobile"><a href="demo_video.html">Video Demo</a></li>
+					<li class="hide_menu_on_mobile"><a href="site_report.html">Report</a></li>
+					<li class="open_menu_bar" onclick=showSidebar()><a href="#"><img src="open_menu.png" alt=""></a></li>
+				</ul>
+			</nav>
+
             <main id="main_contact">
                 <h1 class="page_heading" id="contact_heading">Contact Information</h1>
                 <div class="contact_info">
@@ -71,5 +81,6 @@
                 <small>© Copyright 2024, Sandesh Thapa</small>
             </footer>
         </div>
+        <script src="nav_menu_button.js"></script>
     </body>
 </html>

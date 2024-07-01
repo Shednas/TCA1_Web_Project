@@ -13,19 +13,28 @@
 	</head>
 	<body>
 		<div class="grid_container_main">
-            <nav id="navigation_menu">
-                <div id="hero_logo"><p data-text="Sandesh Thapa">Sandesh Thapa</p></div>
-				<ul id="menu_items">
-					<li><a href="my_portfolio.html" class="m_item">Home</a></li>
-					<li><a href="my_projects.html" class="m_item">Projects</a></li>
-					<li><a href="contact.html" class="m_item">Contact</a></li>
-					<li><a href="demo_video.html" class="m_item" id="highlight">Video Demo</a></li>
-					<li><a href="site_report.html" class="m_item">Report</a></li>
+            <nav>
+				<ul id="menu_side_bar">
+					<li onclick=hideSidebar()><a href="#"><img src="close_menu.png" alt=""></a></li>
+					<li><a href="my_portfolio.html">Home</a></li>
+					<li><a href="my_projects.html">Projects</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="demo_video.html" class="highlight">Video Demo</a></li>
+					<li><a href="site_report.html">Report</a></li>
 				</ul>
-            </nav>
+				<ul>
+					<li id="hero_logo"><p>Sandesh Thapa</p></li>
+					<li class="hide_menu_on_mobile"><a href="my_portfolio.html">Home</a></li>
+					<li class="hide_menu_on_mobile"><a href="my_projects.html">Projects</a></li>
+					<li class="hide_menu_on_mobile"><a href="contact.html">Contact</a></li>
+					<li class="hide_menu_on_mobile"><a href="demo_video.html" class="highlight">Video Demo</a></li>
+					<li class="hide_menu_on_mobile"><a href="site_report.html">Report</a></li>
+					<li class="open_menu_bar" onclick=showSidebar()><a href="#"><img src="open_menu.png" alt=""></a></li>
+				</ul>
+			</nav>
 
             <main id="main_video">
-                <h1 class="page_heading" id="video_heading">Website Demo video</h1>
+                <h1 class="page_heading" id="video_heading">Video Showcase</h1>
                 <div id="video_part">
                     <a href=""><img src="thumbnail_website.jpeg" alt="" id="demo_video"><br>This image will direct you to mymedia.northampton.ac.uk</a>
                 </div>
@@ -37,6 +46,6 @@
             </footer>
 
         </div>
-        
+        <script src="nav_menu_button.js"></script>
     </body>
 </html>
