@@ -330,9 +330,18 @@ nav a:hover{
 #project_heading{
     grid-row: 1/2;
 }
+.project_paragraph{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: start;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
 
 #project_sort{
-    grid-row: 2/3;
+    grid-row: 3/4;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-column-gap: 5%;
